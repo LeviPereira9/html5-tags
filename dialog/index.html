@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag: Dialog</title>
+
+    <style> 
+    
+    button {
+        cursor: pointer;
+    }
+    
+    </style>
+
+
+    <script>
+        function AbrirDialog () {
+            document.getElementById("d1").setAttribute("open","");
+        }
+
+        function FecharDialog () {
+            document.getElementById("d1").removeAttribute("open","");
+        }
+    </script>
+
+
+</head>
+<body>
+
+    <button onclick="AbrirDialog ()">Abrir</button>
+    <button onclick="FecharDialog ()">Fechar</button>
+
+
+    <dialog id="d1" open>
+        <p> <dfn title="Linguagem de marcação para web">HTML</dfn> Hypertext Markup Language é uma linguagem de marcação utilizada na construção de páginas na Web</p>
+    </dialog>
+</body>
+</html>
