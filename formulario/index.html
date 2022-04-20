@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag: Formulários</title>
+    <style>
+
+
+        label {
+            margin-left: 10px;
+        }
+
+        input {
+            border: 1px solid black;
+            border-radius: 3px;
+            margin: 10px;
+        }
+
+        form {
+            width: 280px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: lightgray;
+            box-shadow: 0px 0px 10px rgb(65, 64, 64);
+        }
+
+        .div_btn {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+        <label for="f_nome">Nome:</label>
+        <input type="text" name="f_nome">
+        <div class="div_btn">
+            <input type="submit" name="f_enviar">
+            <input type="reset" name="f_limpar" value="Limpar">
+            <input type="button" name="f_btn" value="Clique aqui">
+        </div>
+    </form>
+</body>
+</html>
