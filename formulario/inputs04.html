@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs: color, email, image</title>
+    
+    <style>
+
+        form {
+            background-color: gainsboro;
+            width: 290px;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        form input {
+            margin-top: 5px;
+        }
+
+        input#i_enviar {
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        input#i_login {
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Inputs: color, email, image</h1>
+
+    <form action="#" name="" method="get" id="f_">
+
+        <label for="i_cor">Escolha uma cor:</label>
+        <input type="color" name="cor" id="i_cor" value="cor">
+
+        <br>
+        <hr>
+
+        <label for="i_email">Digite seu e-mail:</label>
+        <input type="email" name="email" id="i_email" value="e-mail">
+
+        <br>
+        <hr>
+
+
+        <input type="image" src="https://images.vexels.com/media/users/3/140703/isolated/preview/dd92377033dbf6c3168ce0cb27a54c3a-bot--o-laranja-de-login-by-vexels.png" alt="Botão de Login" id="i_login" value="Login">
+
+        <br>
+
+        <input type="submit" value="Enviar" id="i_enviar">
+    </form>
+
+
+</body>
+</html>

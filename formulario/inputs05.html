@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs: tel, number, search</title>
+
+    <style>
+
+        form {
+            background-color: gainsboro;
+            width: 290px;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        form input {
+            margin-top: 5px;
+        }
+
+        input#i_enviar {
+            margin-top: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Inputs: tel, number, search</h1>
+
+    <form action="#" name="formulario" method="get" id="f_f">
+
+
+        <label for="i_tel">Digite seu telefone: </label>
+        <input type="tel" name="telefone" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxx" id="i_tel" value="">
+
+        <hr>
+        <br>
+
+        <label for="i_num">Digite um número:</label>
+        <input type="number" name="numero" id="i_num" value="" step="10" min="0" max="100">
+
+        <br>
+        <hr>
+
+
+        <label for="i_search">Pesquisa:</label> <br>
+        <input type="search" name="pesquisar" id="i_search">
+
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
