@@ -11,6 +11,10 @@
             margin: 10px;
         }
 
+        form {
+            margin-bottom: 15px;
+        }
+
         form#cadastro { 
             width: 230px;
             border: 1px solid rgb(82, 82, 82);
@@ -23,21 +27,31 @@
             border: green 1px solid;
             background-color: aliceblue;
             text-align: left;
-            padding-left: 20px;
+            padding: 20px;
             height: 200px;
-            width: 30%;
+            width: 25%;
+        }
+
+        form#pesquisacarro {
+            border: green 1px solid;
+            background-color: aliceblue;
+            text-align: left;
+            padding: 20px;
+            height: 100px;
+            width: 180px
         }
     </style>
 
 </head>
 <body>
+    
     <form name="f_cadastro" action="#" method="get" id="cadastro">
 
         <label for="f_username">Username</label>
         <input type="text" name="f_nome" maxlength="20" id="f_username">
 
-        <label for="f_password">Senha</label>
-        <input type="password" name="f_senha" id="f_senha" maxlength="15" id="f_password">
+        <label for="f_senha">Senha</label>
+        <input type="password" name="f_senha" id="f_senha" maxlength="15" id="f_senha" required>
 
         <input type="submit" value="Entrar" name="f_entrar">
 
@@ -62,6 +76,7 @@
     </form>
 
     <form action="#" name="f_carro" method="get" id="pesquisacarro">
+
         <label for="">Possui um carro?</label> <br>
         
         <input type="radio" name="carro" id="sim" value="sim">

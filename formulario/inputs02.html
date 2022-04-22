@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs: Data, time, datatime-local</title>
+    <style>
+
+        div.caixa {
+            background-color: rgb(243, 243, 243);
+            border: 1px solid rgba(0, 0, 0, 0.603);
+            border-radius: 10px;
+            width: 300px;
+            height: 350px;
+        }
+
+
+        form {
+            margin: 10px;
+        }
+        
+
+        form#f_hora {
+            border: 1px solid green;
+            border-radius: 10px;
+            background-color: aliceblue;
+            padding: 15px;
+            width: 115px;
+            margin-top: 10px;
+        }
+
+
+        input#hora {
+            margin-bottom: 10px;
+        }
+
+        form#f_data {
+            border: 1px solid green;
+            border-radius: 10px;
+            background-color: aliceblue;
+            padding: 15px;
+            width: 220px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Inputs: time, data, datatime-local</h1>
+
+    <div class="caixa">
+        <form action="#" name="horario" method="get" id="f_hora">
+
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" min="09:00" max="18:00" id="hora" value="hora" step="2"> <br>
+
+            <input type="submit" name="enviar" value="Enviar">
+
+        </form>
+
+        <hr>
+
+        <form action="#" name="data" method="get" id="f_data">
+
+            <label for="data">Data:</label>
+            <input type="date" name="data" min="2019-06-01" max="2019-06-30" id="data" value="data">
+            
+            <input type="submit" name="enviar" value="Enviar">
+
+            <small>Escolha uma data do mês de Junho.</small>
+        </form>
+
+        <hr>
+
+        <form action="#" name="data-hora-local" method="get" id="f_data-hora-local">
+
+            <label for="data-hora-local"></label>
+            <input type="datetime-local" name="data-hora-local" id="data-hora-local">
+
+            <input type="submit" value="Enviar">            
+        </form>
+
+    </div>
+
+
+</body>
+</html>
