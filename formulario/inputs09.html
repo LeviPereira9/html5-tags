@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs: fieldset</title>
+    <style>
+
+        form {
+            background-color: gainsboro;
+            width: 290px;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .espaco {
+            display: block;
+            margin-bottom: 1px;
+        }
+
+        form input {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        input#i_enviar {
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>Input: Fieldset</h1>
+
+    <form action="#" name="f_f" method="get">
+
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="i_nome">Nome completo:</label> <br>
+            <input type="text" name="f_name" id="i_nome" placeholder="Nome">
+            <br>
+            <label for="i_tel">Número de telefone:</label> <br>
+            <input type="tel" name="f_tel" id="i_tel" placeholder="(xx)9xxxx-xxxx">
+            <br>
+            
+            <label for="i_email">E-mail:</label> <br>
+            <input type="email" name="f_email" id="i_email" placeholder="SeuEmail@gmail.com">
+        </fieldset>
+        
+        <br>
+
+
+        <fieldset>
+            <legend>Avaliação</legend>
+            <label for="i_list">Digite o nome do seu notebook:</label>
+            <input list="d_produ" name="produtos" id="i_list" placeholder="Lenovo Ideapad">
+            <datalist id="d_produ">
+                <option value="Lenovo Ideapad S15IKB">1 Tera 4 Gigas Placa Integrada</option>
+                <option value="Lenovo Ideapad S15IIL"> 1 Tera 8 Gigas Placa dedicada</option>
+                <option value="Lenovo Ideapad S15OP1"> 1 Tera 512 SSD 12 Gigas Placa dedicada</option>
+            </datalist>
+            <br>
+            <label for="" class="espaco">Qual sua avaliação do produto:</label> <br>
+            
+            <input type="radio" name="avaliacao" id="i_mb" value="Muito Bom">
+            <label for="i_mb">Muito Bom</label> <br>
+            <input type="radio" name="avaliacao" id="i_b" value="Bom">
+            <label for="i_b">Bom</label> <br>
+            <input type="radio" name="avaliacao" id="i_m" value="Medio">
+            <label for="i_m">Médio</label> <br>
+            <input type="radio" name="avaliacao" id="i_r" value="Ruim">
+            <label for="i_r">Ruim</label> <br>
+            <input type="radio" name="avaliacao" id="i_mr" value="Muito Ruim">
+            <label for="i_mr">Muito Ruim</label>
+            <br>
+            <input type="submit" id="i_enviar" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

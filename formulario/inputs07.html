@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs: select, option</title>
+    <style>
+
+        form {
+            background-color: gainsboro;
+            width: 290px;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        form input {
+            margin-top: 5px;
+        }
+
+        input#i_enviar {
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Inputs: selection e option</h1>
+
+    <form action="#" name="f_f" method="get">
+
+        <label for="i_select">Cores</label>
+        <select name="cores" id="i_select" multiple size="2">
+            <option value="Preto">Preto</option>
+            <option value="Vermelho">Vermelho</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+
+        </select>
+
+        <br>
+        <input type="submit" id="i_enviar">
+    </form>
+</body>
+</html>

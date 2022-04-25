@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs:list, datalist</title>
+    <style>
+
+        form {
+            background-color: gainsboro;
+            width: 290px;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        form input {
+            margin-top: 5px;
+        }
+
+        input#i_enviar {
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Inputs: list, datalist</h1>
+
+    <form action="#" name="f_f" method="get">
+
+        <input list="d_cor" name="f_cor">
+        <datalist id="d_cor">
+            <option value="Lenovo Ideapad S15">1 Tera 4gb</option>
+            <option value="g"></option>
+            <option value="b"></option>
+        </datalist>
+
+        <input type="submit" id="i_enviar" value="enviar">
+    </form>
+</body>
+</html>

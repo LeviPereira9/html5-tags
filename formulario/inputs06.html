@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs: file, url</title>
+    <style>
+
+        form {
+            background-color: gainsboro;
+            width: 290px;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        form input {
+            margin-top: 5px;
+        }
+
+        input#i_enviar {
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Inputs: file, url</h1>
+
+    <form action="#" name="f_f" method="get" enctype="multipart/form-data" >
+
+        <label for="i_file">Selecione o arquivo:</label>
+        <input type="file" name="arquivo" id="i_file" value="formulario" multiple accept=".jpg,.png,.ico">
+
+        <br>
+        <hr>
+
+
+        <label for="i_url">Digite sua URL:</label> <br>
+        <input type="url" name="link" id="i_url" placeholder="https://..." pattern="https://.*">
+
+        <br>
+        <input type="submit" id="i_enviar" value="Enviar">
+    </form>
+</body>
+</html>
