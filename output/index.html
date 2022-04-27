@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag: output</title>
+</head>
+<body>
+    <h1>Tag: output</h1>
+
+    <form action="#" name="f_f" method="get" oninput="res.value=parseInt(i_vol.value)+parseInt(i_num.value)">
+
+        0<input type="range" name="volume" id="i_vol" min="-100" max="100" step="5" value="50">100
+
+        <br>
+        <p>+</p>
+
+        <input type="number" name="volume" id="i_num" value="0">
+
+        <p>=</p>
+
+        <output name="res" for="i_vol, i_num"></output>
+
+    </form>
+
+
+</body>
+</html>
